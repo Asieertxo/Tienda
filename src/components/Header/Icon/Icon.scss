@@ -1,0 +1,39 @@
+.header{
+
+    &-icon{
+        display: flex;
+        padding: 0.5rem;
+
+        &__technical{
+            display: flex;
+            align-items: center;
+        }
+        
+        &__cesta{
+            display: flex;
+            align-items: center;
+        }
+        
+        &__user{
+            display: flex;
+            align-items: center;
+        }
+        &__technical img{
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0 0.5rem;
+        }
+        
+        &__cesta img{
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0 0.5rem;
+        }
+        
+        &__user img{
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0 0.5rem;
+        }
+    }
+}
