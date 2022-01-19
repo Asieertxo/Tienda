@@ -10,7 +10,7 @@ function Icon() {
         <div className="header-icon__technical">
             <img src={technical}></img>
         </div>
-        <div className="header-icon__cesta">
+        <div className="header-icon__carrito">
             <img src={carrito}></img>
         </div>
         <div className="header-icon__user">
