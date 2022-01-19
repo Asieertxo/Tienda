@@ -1,6 +1,36 @@
 .header{
 
     &-search{
-        padding: 0 1rem;
+        padding: 0 1rem 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__input{
+            //font-family: inherit;
+            //font-size: inherit;
+            color: wheat;
+            background: wheat;
+            border-color: #33cccc;
+            //border: none;
+            padding: 0.7rem 2rem;
+            border-radius: 10px;
+            transition: all 0.2s;
+            margin-right: -2.25rem;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        &__button{
+            background-color: wheat;
+            border: none;
+            
+            & img{
+                width: 1.4rem;
+                height: 1.5rem;
+            }
+        }
     }
 }
