@@ -17,14 +17,24 @@
             padding: 0 0.5rem;
 
             & a{
-                text-decoration: none;
-                font-size: large;
-                text-transform: uppercase;
                 color: black;
+                text-decoration: none;
+                font-size: medium;
+                text-transform: uppercase;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size 1s;
+                
             }
 
             &:hover{
                 background-color: rgb(250, 211, 137);
+            }
+            &:hover a{
+                background-size: 100% 2px;
+                color: #33cccc;
             }
         }
     }
