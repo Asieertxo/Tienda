@@ -1,4 +1,4 @@
-import "./Navegation.scss";
+//import "./Navegation.scss";
 
 function Navegation() {
   return (

@@ -1,4 +1,4 @@
-import "./Icon.scss";
+//import "./Icon.scss";
 
 import carrito from "./../../../img/carrito.png";
 import hacker from "./../../../img/hacker.png";

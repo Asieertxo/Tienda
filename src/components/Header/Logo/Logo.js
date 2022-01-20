@@ -1,4 +1,4 @@
-import "./Logo.scss";
+//import "./Logo.scss";
 import logo from "./../../../img/computadora.png";
 
 function Logo() {
