@@ -1,6 +1,6 @@
 //import "./Icon.scss";
 
-import carrito from "./../../../img/carrito.png";
+import cart from "./../../../img/carrito.png";
 import hacker from "./../../../img/hacker.png";
 import technical from "./../../../img/technical.png";
 
@@ -10,8 +10,8 @@ function Icon() {
         <div className="header-icon__technical">
             <img src={technical}></img>
         </div>
-        <div className="header-icon__carrito">
-            <img src={carrito}></img>
+        <div className="header-icon__cart">
+            <img src={cart}></img>
         </div>
         <div className="header-icon__user">
             <img src={hacker}></img>
