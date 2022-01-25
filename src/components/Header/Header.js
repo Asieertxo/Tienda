@@ -1,9 +1,9 @@
 //import "./../../../sass/tienda.scss";
 
-import Logo from './Logo/Logo';
-import Navegation from './Navegation/Navegation';
-import Search from './Search/Search';
-import Icon from './Icon/Icon';
+import Logo from './Logo';
+import Navegation from './Navegation';
+import Search from './Search';
+import Icon from './Icon';
 
 function Header() {
   return (

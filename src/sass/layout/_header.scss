@@ -1,0 +1,149 @@
+.header{
+    height: 11.4rem;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+////////////////////////////////////////////////  LOGO
+    &-logo{
+        width: 10rem;
+        height: 8.1rem;
+        padding: 0 1.63rem;
+
+        &:hover{
+            width: 12.84rem;
+            height: 10.40rem;
+            padding: 0 0.2rem;
+            content: url("./../../img/computadora.gif");
+        }
+    }
+
+////////////////////////////////////////////////  NAVEGATION
+    &-navegation{
+        background-color: none;
+        height: 100%;
+        display: flex;
+        flex: 0 0 30%;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: auto;
+        
+        &_menu{
+            list-style: none;
+            height: 100%;
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            padding: 0 0.8rem;
+
+            & a{
+                color: black;
+                text-decoration: none;
+                font-size: medium;
+                text-transform: uppercase;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 0.33px;
+                transition: background-size 1s;
+                
+            }
+
+            &:hover{
+                background-color: rgb(92, 92, 92);
+            }
+            &:hover a{
+                background-size: 100% 2px;
+                color: #33cccc;
+            }
+        }
+    }
+
+////////////////////////////////////////////////  SEARCH
+    &-search{
+        padding: 0 1.63rem 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__input{
+            //font-family: inherit;
+            //font-size: inherit;
+            color: wheat;
+            background: grey;
+            border-color: #33cccc;
+            //border: none;
+            padding: 0.7rem 3.25rem;
+            border-radius: 10px;
+            transition: all 0.2s;
+            margin-right: -2.25rem;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        &__button{
+            background-color: grey;
+            border: none;
+            
+            & img{
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+        }
+    }
+
+
+////////////////////////////////////////////////  ICON
+    &-icon{
+        display: flex;
+        padding: 0.8rem;
+
+        &__technical, &__cart, &__user{
+            display: flex;
+            align-items: center;
+        }
+        
+        &__technical img{
+            width: 2.43rem;
+            height: 2.43rem;
+            padding: 0 0.8rem;
+
+            &:hover{
+                width: 3.25rem;
+                height: 3.25rem;
+                padding: 0 0.49rem;
+                content: url("./../../img/technical.gif");
+            }
+        }
+        
+        &__cart img{
+            width: 2.43rem;
+            height: 2.43rem;
+            padding: 0 0.8rem;
+
+            &:hover{
+                width: 3.25rem;
+                height: 3.25rem;
+                padding: 0 0.49rem;
+                content: url("./../../img/carrito.gif");
+            }
+        }
+        
+        &__user img{
+            width: 2.43rem;
+            height: 2.43rem;
+            padding: 0 0.8rem;
+
+            &:hover{
+                width: 3.25rem;
+                height: 3.25rem;
+                padding: 0 0.49rem;
+                content: url("./../../img/hacker.gif");
+            }
+        }
+    }
+}
