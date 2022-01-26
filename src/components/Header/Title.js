@@ -19,7 +19,7 @@ function Title() {
       <h3>best equipment to use in our hotel</h3>
       <div className="header-title__search">
         <input type="text" placeholder="Que quieres..."></input>
-        <a href="#">Search</a>
+        <a href="#" className="button">Search</a>
       </div>
     </div>
   );
