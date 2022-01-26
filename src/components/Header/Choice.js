@@ -8,7 +8,7 @@ function Choice() {
       <div className="header-choice__images">
         <p>&lt;</p>
         <div className="header-choice__images_i">
-          <img src={mouse}></img>
+          <img className="mouse" src={mouse}></img>
         </div>
         <div className="header-choice__images_i">
           <img src={keyboard}></img>
