@@ -50,6 +50,7 @@
         }
     }
 
+
     &-title{
         display: flex;
         align-items: center;
@@ -100,40 +101,58 @@
                 margin-left: 2rem;
             }
         }
+
+        &__icon{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+
+            & img{
+                width: 2rem;
+                height: 2rem;
+                padding: 0 1.5rem;
+            } 
+        }
     }
 
 //////////////////////////////////////CHOICE
     &-choice{
-        &__images{
-
-        }
-        display: flex;
-        align-items: center;
-        //border: 1px solid white;
-        //background-color: greenyellow;
         z-index: 1;
-        margin-right: -15rem;
-        margin-top: 20rem;
-
-        & p{
-            font-size: 3rem;
-            color: rgb(0, 168, 125);
-        }
-
-        &_i{
-            width: 9rem;
-            height: 9rem;
-            background-color: rgba(100, 100, 100, 1);
-            border-radius: 0.4rem;
-            margin: 1rem;
+        &__images{
             display: flex;
-            justify-content: center;
             align-items: center;
-
-            & img{
-                width: 8rem;
-                height: 6rem;
+            //border: 1px solid white;
+            //background-color: greenyellow;
+            //z-index: 1;
+            margin-right: -15rem;
+            margin-top: 20rem;
+            &_i{
+                width: 9rem;
+                height: 9rem;
+                background-color: rgba(100, 100, 100, 1);
+                border-radius: 0.4rem;
+                margin: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                & img{
+                    width: 8rem;
+                    height: 6rem;
+                }
             }
+            & p{
+                font-size: 3rem;
+                color: #00a87d;
+            }
+        }
+        &__text{
+            display: flex;
+            justify-content: space-between;
+            margin-right: -15rem;
+            color: white;
+            padding: 0 5rem;
         }
     }
 
