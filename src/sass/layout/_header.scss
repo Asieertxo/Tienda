@@ -72,19 +72,29 @@
             font-size: 4.5rem;
             font-weight: 900;
             text-transform: capitalize;
+            transition: transform 0.5s;
         }
         & h3{
             font-size: 2rem;
             font-weight: 500;
             text-transform: capitalize;
+            transition: transform 0.8s;
         }
+        & h1:hover, & h3:hover{
+            transform: scale(1.1);
+        }
+
         &__search{
             & input{
+                width: 21.3rem;
                 padding: 1.8rem;
                 border-radius: 2rem;
                 border: none;
                 margin-top: 3rem;
-
+                transition: width 0.5s;
+                &:hover{
+                    width: 23rem;
+                }
                 &:focus{
                     outline: none;
                 }

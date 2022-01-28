@@ -98,5 +98,65 @@
                 text-align: justify;
             }
         }
+
+        &-two{
+            display: flex;
+            flex-direction: column;
+
+            //background-color: violet;
+            width: 22rem;
+            height: 40rem;
+
+            &__image{
+                width: 100%;
+                height: 15rem;
+                border-radius: 0.4rem;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                &_front{
+                    width: 8rem;
+                    height: 17rem;
+                    background-color: rgba(190, 190, 190, 1);
+                    z-index: 1;
+                    margin-top: 6rem;
+                    margin-left: 14rem;
+                    border-radius: 0.4rem;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img{  
+                        width: 7rem;
+                    }
+                }
+                &_side{
+                    width: 19rem;
+                    height: 21rem;
+                    background-color: black;
+                    position: absolute;
+                    border-radius: 0.4rem;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img{
+                        width: 17rem;
+                    }
+                }
+            }
+
+            & h4{
+                font-size: 1.4rem;
+                font-weight: 100;
+                padding: 5rem 0 2rem 0;
+            }
+            & p{
+                font-size: 1.2rem;
+                font-weight: 100;
+                text-align: justify;
+            }
+        }
     }
 }
