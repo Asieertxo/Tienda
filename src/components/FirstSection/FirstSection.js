@@ -7,15 +7,15 @@ function FirstSection() {
       <h2>Complete Gaming Solution</h2>
 
 
-      <div className="card">
-        <div className="card-one">
+      <div className="cards">
+        <div className="cards-one">
 
-          <div className="card-one__image">
+          <div className="cards-one__image">
             <p>Peripherals</p>
-            <div className="card-one__image_im">
+            <div className="cards-one__image_im">
               <img src={mouse}></img>
             </div>
-            <div className="card-one__image_txt">
+            <div className="cards-one__image_txt">
               <h4>Wolf Pack</h4>
               <span>Mira los perifericos que mejor se adaptan a ti</span>
               <a href="#">View &#8594;</a>
@@ -27,8 +27,8 @@ function FirstSection() {
         </div>
 
 
-        <div className="card-one">
-          <div className="card-one__image">
+        <div className="cards-one">
+          <div className="cards-one__image">
             <p></p>
           </div>
 
@@ -37,8 +37,8 @@ function FirstSection() {
         </div>
 
 
-        <div className="card-one">
-          <div className="card-one__image">
+        <div className="cards-one">
+          <div className="cards-one__image">
             <p></p>
           </div>
 
