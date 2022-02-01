@@ -1,11 +1,10 @@
-import pc1 from './../../img/pc1.jpg';
 
 function Item(props){
     const item = props.item;
 
     return(
         <>
-            <img href={item.img}></img>
+            <img className="imagen" src={item.img}></img>
             <span>
                 <a href={item.url}>{item.name}</a>
             </span>
