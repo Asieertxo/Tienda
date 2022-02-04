@@ -1,0 +1,108 @@
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 50rem;
+    background-color: rgb(240, 240, 240);
+    margin: 2rem;
+    margin-bottom: 3rem;
+    //border: 1px solid black;
+    border-radius: 1rem;
+    transition: transform 0.8s;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+
+    & .image{
+        width: 20rem;
+        height: 20rem;
+        margin: 2rem 0;
+        border-radius: 1rem;
+    }
+    & .name{
+        margin-bottom: 1rem;
+        & a{
+           font-size: 1.8rem;
+           font-weight: bold;
+            color: rgb(0, 168, 125);
+            text-decoration: none;
+            &:hover{
+                -webkit-text-stroke: 0.08rem rgb(0, 168, 125);
+                color: white;
+            }
+        }
+    }
+    & .caract{
+        padding: 0.5rem;
+        text-align: justify;
+    }
+    & .price{
+        font-size: 3rem;
+        font-weight: bolder;
+        color: rgb(0, 168, 125);
+        text-decoration: none;
+    }
+    & .points{
+        font-size: 1.5rem;
+        color: gold;
+        display: flex;
+    }
+}
+
+.popcard{
+    position: absolute;
+    left: 50%;
+
+    display: flex;
+    align-items: center;
+    //flex-direction: column;
+    width: 90%;
+    height: 50rem;
+    background-color: rgb(240, 240, 240);
+    //margin: 2rem;
+    margin-bottom: 3rem;
+    //border: 1px solid black;
+    border-radius: 1rem;
+    transition: transform 0.8s;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+
+    & .image{
+        width: 5rem;
+        height: 5rem;
+        //margin: 2rem 0;
+        border-radius: 1rem;
+    }
+    /*& .name{
+        margin-bottom: 1rem;
+        & a{
+           font-size: 1.8rem;
+           font-weight: bold;
+            color: rgb(0, 168, 125);
+            text-decoration: none;
+            &:hover{
+                -webkit-text-stroke: 0.08rem rgb(0, 168, 125);
+                color: white;
+            }
+        }
+    }
+    & .caract{
+        padding: 0.5rem;
+        text-align: justify;
+    }
+    & .price{
+        font-size: 3rem;
+        font-weight: bolder;
+        color: rgb(0, 168, 125);
+        text-decoration: none;
+    }
+    & .points{
+        font-size: 1.5rem;
+        color: gold;
+        display: flex;
+    }*/
+}

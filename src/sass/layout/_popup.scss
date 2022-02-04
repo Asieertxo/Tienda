@@ -1,14 +1,81 @@
 .popup{
     position: absolute;
-    margin-top: 50%;
+    margin-top: 20rem;
     margin-left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     z-index: 2;
+    visibility: hidden;
 
     width: 75%;
-    height: 75rem;
-    background-color: chartreuse;
+    height: auto;
+    background-color: white;
+    border-radius: 1rem;
 
     display: flex;
-    justify-content: center;
+    align-items: center;
+    //justify-content: center;
+    flex-direction: column;
+
+    &-products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 2rem;
+        margin-top: 3rem;
+
+        &__card{
+            display: flex;
+            align-items: center;
+            background-color: rgb(240, 240, 240);
+            border-radius: 1rem;
+            width: 90%;
+            height: 18rem;
+            transition: transform 0.8s;
+            &:hover{
+                transform: scale(1.05);
+            }
+
+            &:last-child{
+                margin-bottom: 2rem;
+            }
+
+            &_image{
+                width: 10rem;
+                height: 10rem;
+                margin: 0 2rem;
+                border-radius: 1rem;
+            }
+            &_text{
+                display: flex;
+                flex-direction: column;
+
+                & a{
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    color: rgb(0, 168, 125);
+                    text-decoration: none;
+                    &:hover{
+                        -webkit-text-stroke: 0.08rem rgb(0, 168, 125);
+                        color: white;
+                    }
+                }
+                & .caract{
+                    padding: 0.5rem 0;
+                    text-align: justify;
+                    width: 80%;
+                }
+            }
+            &_price{
+                font-size: 2rem;
+                font-weight: bolder;
+                color: rgb(0, 168, 125);
+                text-decoration: none;
+                padding: 0 2rem 0 0;
+            }
+
+        }
+    }
+
+    
 }

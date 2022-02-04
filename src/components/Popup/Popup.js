@@ -1,16 +1,17 @@
-import Search from "./../Header/Search";
-import Item from "./../SecondSection/Item";
+import Item from "./Item";
 
 function SecondSection() {
   return (
     <div className="popup">
-      <Search />
+      <div className="search">
+        <input type="text" placeholder="Que quieres..."></input>
+      </div>
 
-      <div className="second-products">
+      <div className="popup-products">
          {list.map(function (item){
            return(
-             <div key={item.ObjectID} className="">
-               <Item item={item}/>
+             <div key={item.ObjectID} className="popup-products__card">
+               <Item item={item} popup={true}/>
              </div>
            );
          })}

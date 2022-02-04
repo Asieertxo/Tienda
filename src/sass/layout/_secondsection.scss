@@ -37,17 +37,17 @@
 
 
 
-            &_imagen{
+            &_image{
                 width: 20rem;
                 height: 20rem;
                 margin: 2rem 0;
                 border-radius: 1rem;
-            }
+            }   
             &_name{
                 margin-bottom: 1rem;
                 & a{
-                   font-size: 1.8rem;
-                   font-weight: bold;
+                    font-size: 1.8rem;
+                    font-weight: bold;
                     color: rgb(0, 168, 125);
                     text-decoration: none;
                     &:hover{
@@ -74,19 +74,6 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -3,7 +3,7 @@ function Item(props){
 
     return(
         <>
-            <img className="second-products__card_imagen" src={item.img}></img>
+            <img className="second-products__card_image" src={item.img}></img>
             <span className="second-products__card_name">
                 <a href={item.url}>{item.name}</a>
             </span>

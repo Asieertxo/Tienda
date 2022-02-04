@@ -1,9 +1,9 @@
 function Search(){
-    return (
-      <div className="search">
-        <input type="text" placeholder="Que quieres..."></input>
-      </div>
-    );
+  return (
+    <div className="btnsearch">
+      <button>Que quieres ...</button>
+    </div>
+  );
 }
 
 export default Search;

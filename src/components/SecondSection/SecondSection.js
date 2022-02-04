@@ -10,7 +10,7 @@ function SecondSection() {
          {list.map(function (item){
            return(
              <div key={item.ObjectID} className="second-products__card">
-               <Item item={item}/>
+               <Item item={item} second={true}/>
              </div>
            );
          })}
