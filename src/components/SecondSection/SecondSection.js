@@ -1,6 +1,75 @@
 import Item from "./Item";
 
 
+function SecondSection() {
+  return (
+    <div className="second">
+      <h2 className="second-title">Toda nuestra gama de productos</h2>
+
+      <div className="second-products">
+         {list.map(function (item){
+           return(
+             <div key={item.ObjectID} className="second-products__card">
+               <Item item={item}/>
+             </div>
+           );
+         })}
+      </div>
+
+      <div className="footer">
+
+      </div>
+    </div>
+  );
+}
+
+export default SecondSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const list = [
   {
     img: require('./../../img/pc1.jpg'),
@@ -136,27 +205,3 @@ const list = [
     ObjectID: 12,
   },
 ];
-
-function SecondSection() {
-  return (
-    <div className="second">
-      <h2 className="second-title">Toda nuestra gama de productos</h2>
-
-      <div className="second-products">
-         {list.map(function (item){
-           return(
-             <div key={item.ObjectID} className="second-products__card">
-               <Item item={item}/>
-             </div>
-           );
-         })}
-      </div>
-
-      <div className="footer">
-
-      </div>
-    </div>
-  );
-}
-
-export default SecondSection;

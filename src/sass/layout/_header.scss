@@ -84,23 +84,6 @@
             transform: scale(1.1);
         }
 
-        &__search{
-            & input{
-                width: 21.3rem;
-                padding: 1.8rem;
-                border-radius: 2rem;
-                border: none;
-                margin-top: 3rem;
-                transition: width 0.5s;
-                &:hover{
-                    width: 23rem;
-                }
-                &:focus{
-                    outline: none;
-                }
-            }
-        }
-
         &__icon{
             width: 100%;
             display: flex;

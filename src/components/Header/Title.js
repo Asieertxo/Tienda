@@ -1,3 +1,5 @@
+import Search from "./Search";
+
 import menu from "./../../img/menu.png";
 import bag from "./../../img/bag.png";
 
@@ -17,10 +19,9 @@ function Title() {
 
       <h1>start renting gaming</h1>
       <h3>best equipment to use in our hotel</h3>
-      <div className="header-title__search">
-        <input type="text" placeholder="Que quieres..."></input>
-        <a href="#" className="button">Search</a>
-      </div>
+      
+      <Search />
+
     </div>
   );
 }
