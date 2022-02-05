@@ -20,3 +20,8 @@ ReactDOM.render(
   </>,
   document.getElementById('root')
 );
+
+
+
+/*13-01-2022 0:14:00 -- haba del localStorage y el sessionStorage*/
+/*13 despues useEffect*/
