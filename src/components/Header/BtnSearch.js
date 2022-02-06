@@ -4,7 +4,7 @@ function BtnSearch(props){
 
   return (
     <div className="btnsearch">
-      <button onClick={() => props.setShow(!props.show)}>Que quieres ...</button>
+      <button onClick={() => props.setShow(!props.show)}>Click Que quieres ...</button>
     </div>
   );
 }
