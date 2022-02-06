@@ -4,7 +4,7 @@
     margin-left: 50%;
     transform: translate(-50%);
     z-index: 2;
-    visibility: hidden;
+    //visibility: hidden;
 
     width: 75%;
     height: auto;
@@ -15,6 +15,12 @@
     align-items: center;
     //justify-content: center;
     flex-direction: column;
+
+    &-close{
+        position: absolute;
+        top: 3rem;
+        right: 2em;
+    }
 
     &-products{
         display: flex;

@@ -1,21 +1,27 @@
+import { useState } from "react";
+
 import Choice from "./Choice";
 import Title from "./Title";
 import Offer from "./Offer";
-
-import menu from "./../../img/menu.png";
-import bag from "./../../img/bag.png";
+import Popup from "./Popup/Popup";
 
 function Header() {
+
+  const [show, setShow] = useState(false);
+
   return (
-    <header className="header">
-    <p className="header-T"><b>G</b>aming <b>S</b>hop</p>
-    
-    <Choice />
+    <>
+      {show && <Popup show={show} setShow={setShow}/>}
+      <header className="header">
+        <p className="header-T"><b>G</b>aming <b>S</b>hop</p>
+        
+        <Choice />
 
-    <Title />
+        <Title show={show} setShow={setShow}/>
 
-    <Offer />
-    </header>
+        <Offer />
+      </header>
+    </>
   );
 }
 

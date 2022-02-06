@@ -1,9 +1,9 @@
-import Search from "./Search";
+import BtnSearch from "./BtnSearch";
 
 import menu from "./../../img/menu.png";
 import bag from "./../../img/bag.png";
 
-function Title() {
+function Title(props) {
   return (
     <div className="header-title">
       <div className="header-bodertop">
@@ -20,7 +20,7 @@ function Title() {
       <h1>start renting gaming</h1>
       <h3>best equipment to use in our hotel</h3>
       
-      <Search />
+      <BtnSearch show={props.show} setShow={props.setShow}/>
 
     </div>
   );
