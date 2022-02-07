@@ -10,7 +10,7 @@ function Popup(props) {
   return (
     <div className="popup">
 
-      <button className='popup-close' onClick={() => props.setShow(!props.show)}>x</button>
+      <button className='popup-close' onClick={() => props.setPopup(!props.popup)}>x</button>
 
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
 

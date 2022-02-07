@@ -9,8 +9,9 @@
     width: 75%;
     height: 75%;
     background-color: white;
-    border-radius: 1rem;
     overflow-y: scroll;
+    border-radius: 1rem;
+
 
     display: flex;
     align-items: center;
@@ -22,9 +23,15 @@
         top: 3rem;
         right: 2em;
         padding: 1rem;
+        font-weight: bold;
         border: none;
         border-radius: 1rem;
         background-color: rgb(240, 240, 240);
+        transition: transform 0.5s;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
     }
 
     &-products{

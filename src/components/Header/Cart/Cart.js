@@ -1,10 +1,10 @@
-function Cart() {
+function Cart(props) {
 
   return (
     <div className="cart">
       <div className="cart-title">
         <p>Cart</p>
-        <buttom>&#215;</buttom>
+        <button className='cart-title_close' onClick={() => props.setCart(!props.cart)}>&#215;</button>
       </div>
       <div className="cart-products">
         {list.map(function (item){
@@ -13,9 +13,17 @@ function Cart() {
               <img src={item.img}></img>
               <a href={item.url}>{item.name}</a>
               <span>{item.price}€</span>
+              <div className='mod-cant'>
+                <button>+</button>
+                <button>-</button>
+              </div>
             </div>
           );
         })}
+      </div>
+      <div className="cart-price">
+        <p>Total:</p>
+        <span>2000</span>
       </div>
     </div>
   );

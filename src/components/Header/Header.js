@@ -8,19 +8,20 @@ import Cart from "./Cart/Cart";
 
 function Header() {
 
-  const [show, setShow] = useState(false);
+  const [popup, setPopup] = useState(false);
+  const [cart, setCart] = useState(false);
 
   return (
     <>
-      {show && <Popup show={show} setShow={setShow}/>}
+      {popup && <Popup popup={popup} setPopup={setPopup}/>}
       <header className="header">
         <p className="header-T"><b>G</b>aming <b>S</b>hop</p>
         
         <Choice />
 
-        <Title show={show} setShow={setShow}/>
+        <Title popup={popup} setPopup={setPopup}  cart={cart} setCart={setCart}/>
 
-        <Cart />
+        {cart && <Cart cart={cart} setCart={setCart}/>}
 
         <Offer />
       </header>
