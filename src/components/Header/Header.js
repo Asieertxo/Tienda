@@ -4,6 +4,7 @@ import Choice from "./Choice";
 import Title from "./Title";
 import Offer from "./Offer";
 import Popup from "./Popup/Popup";
+import Cart from "./Cart/Cart";
 
 function Header() {
 
@@ -18,6 +19,8 @@ function Header() {
         <Choice />
 
         <Title show={show} setShow={setShow}/>
+
+        <Cart />
 
         <Offer />
       </header>

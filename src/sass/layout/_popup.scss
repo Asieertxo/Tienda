@@ -7,10 +7,10 @@
     //visibility: hidden;
 
     width: 75%;
-    height: auto;
+    height: 75%;
     background-color: white;
     border-radius: 1rem;
-    //overflow-y: scroll;
+    overflow-y: scroll;
 
     display: flex;
     align-items: center;
@@ -85,9 +85,6 @@
                 text-decoration: none;
                 padding: 0 2rem 0 0;
             }
-
         }
-    }
-
-    
+    }  
 }
