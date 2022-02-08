@@ -1,4 +1,8 @@
+import {useState} from 'react';
+
 function Cart(props) {
+
+  const [count, setCount] = useState(0);
 
   return (
     <div className="cart">
@@ -12,10 +16,11 @@ function Cart(props) {
             <div key={item.ObjectID} className="cart-products__card">
               <img src={item.img}></img>
               <a href={item.url}>{item.name}</a>
+              <p aling="right">x{count}</p>
               <span>{item.price}€</span>
               <div className='mod-cant'>
-                <button>+</button>
-                <button>-</button>
+                <button onClick={() => setCount(count + 1)}>+</button>
+                <button onClick={() => setCount(count - 1)}>-</button>
               </div>
             </div>
           );
@@ -23,7 +28,7 @@ function Cart(props) {
       </div>
       <div className="cart-price">
         <p>Total:</p>
-        <span>2000</span>
+        <span></span>
       </div>
     </div>
   );
