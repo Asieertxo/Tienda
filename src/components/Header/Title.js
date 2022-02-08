@@ -14,7 +14,7 @@ function Title(props) {
 
       <div className="header-title__icon">
         <img src={menu}></img>
-        <img src={cart} onClick={() => props.setCart(!props.cart)}></img>
+        <img src={cart} onClick={() => props.setCarrito(!props.carrito)}></img>
       </div>
 
       <h1>start renting gaming</h1>

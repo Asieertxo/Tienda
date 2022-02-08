@@ -14,7 +14,7 @@ function Popup(props) {
 
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
 
-      <List searchTerm={searchTerm}/>
+      <List searchTerm={searchTerm} addCart={props.addCart}/>
     </div>
   );
 }

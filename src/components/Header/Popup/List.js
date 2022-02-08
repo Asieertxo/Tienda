@@ -1,12 +1,15 @@
 import Item from "./Item";
 
-function List({searchTerm}) {
+
+function List(props) {
+
+
   return (
     <div className="popup-products">
-      {list.filter(item => item.name.toLowerCase().includes(searchTerm)).map(function (item){
+      {list.filter(item => item.name.toLowerCase().includes(props.searchTerm)).map(function (item){
         return(
           <div key={item.ObjectID} className="popup-products__card">
-            <Item item={item} popup={true}/>
+            <Item item={item} popup={true} addCart={props.addCart}/>
           </div>
         );
       })}

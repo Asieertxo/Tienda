@@ -1,5 +1,8 @@
+import cart from "./../../../img/cart.png"
+
 function Item(props){
     const item = props.item;
+    const addCart = props.addCart;
 
     return(
         <>
@@ -10,7 +13,7 @@ function Item(props){
             <span className="caract">{item.text}</span>
           </div>
           <span className="popup-products__card_price">{item.price}€</span>
-
+          <img className="popup-products__card_cart" src={cart} onClick={()=>addCart(item.ObjectID)}></img>
         </>
     )
 }

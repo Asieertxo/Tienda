@@ -50,10 +50,10 @@
             width: 90%;
             height: auto;
             padding: 1rem 0;
-            transition: transform 0.8s;
+            /*transition: transform 0.8s;
             &:hover{
                 transform: scale(1.05);
-            }
+            }*/
 
             &:last-child{
                 margin-bottom: 2rem;
@@ -91,6 +91,19 @@
                 color: rgb(0, 168, 125);
                 text-decoration: none;
                 padding: 0 2rem 0 0;
+            }
+            &_cart{
+                width: 2rem;
+                height: 2rem;
+                margin-right: 1rem;
+                transition: all 0.5s;
+                &:hover{
+                    cursor: pointer;
+                    transform: translateY(-0.3rem);
+                }
+                &:active{
+                transform: translateY(0.3rem);
+                }
             }
         }
     }  

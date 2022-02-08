@@ -1,30 +1,24 @@
-import {useState} from 'react';
+import { useReducer } from "react";
+import { reducerCart, initialState } from "../../../reducers/cartReducer";
+
+import CartItem from "./CardItem"
 
 function Cart(props) {
 
-  const [count, setCount] = useState(0);
+  const [state, dispatch] = useReducer(reducerCart, initialState);
+  const {list, cart} = state;
+
 
   return (
     <div className="cart">
       <div className="cart-title">
         <p>Cart</p>
-        <button className='cart-title_close' onClick={() => props.setCart(!props.cart)}>&#215;</button>
+        <button className='cart-title_close' onClick={() => props.setCarrito(!props.carrito)}>&#215;</button>
       </div>
       <div className="cart-products">
-        {list.map(function (item){
-          return(
-            <div key={item.ObjectID} className="cart-products__card">
-              <img src={item.img}></img>
-              <a href={item.url}>{item.name}</a>
-              <p aling="right">x{count}</p>
-              <span>{item.price}€</span>
-              <div className='mod-cant'>
-                <button onClick={() => setCount(count + 1)}>+</button>
-                <button onClick={() => setCount(count - 1)}>-</button>
-              </div>
-            </div>
-          );
-        })}
+        {state.cart.map((item, index) => (
+          <CartItem key={index} item={item} />
+        ))}
       </div>
       <div className="cart-price">
         <p>Total:</p>
@@ -35,7 +29,6 @@ function Cart(props) {
 }
   
 export default Cart;
-
 
 
 
