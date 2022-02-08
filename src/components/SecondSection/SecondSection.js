@@ -15,10 +15,6 @@ function SecondSection() {
            );
          })}
       </div>
-
-      <div className="footer">
-
-      </div>
     </div>
   );
 }

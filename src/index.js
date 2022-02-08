@@ -17,7 +17,7 @@ ReactDOM.render(
 
     <SecondSection />
 
-    {/*<Footer />*/}
+    <Footer />
   </>,
   document.getElementById('root')
 );
