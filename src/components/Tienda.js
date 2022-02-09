@@ -27,7 +27,7 @@ localStorage.setItem('cart',JSON.stringify(state));
 
     <FirstSection />
 
-    <SecondSection />
+    <SecondSection addCart={addCart}/>
 
     <Footer />
     </>

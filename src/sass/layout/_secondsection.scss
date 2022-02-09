@@ -59,10 +59,29 @@
                 text-align: justify;
             }
             &_price{
-                font-size: 3rem;
-                font-weight: bolder;
-                color: rgb(0, 168, 125);
-                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                & span{
+                    font-size: 3rem;
+                    font-weight: bolder;
+                    color: rgb(0, 168, 125);
+                    text-decoration: none;  
+                }
+                & img{
+                    width: 2rem;
+                    height: 2rem;
+                    transition: all 0.5s;
+                    &:hover{
+                        cursor: pointer;
+                        transform: translateY(-0.3rem);
+                    }
+                    &:active{
+                        transform: translateY(0.3rem);
+                    }
+                }
+                
             }
             &_points{
                 font-size: 1.5rem;
