@@ -3,7 +3,6 @@ import CardItem from "./CardItem";
 function Cart(props) {
 
   const local = JSON.parse(localStorage.getItem('cart'));
-  console.log('objetoObtenido: ',local);
 
   return (
     <div className="cart">
@@ -16,7 +15,7 @@ function Cart(props) {
         {local.map(function (item){
           return (
             <div key={item.ObjectID} className='cart-products__card'>
-              <CardItem item={item}/>
+              <CardItem item={item} addCart={props.addCart}/>
             </div>
           );
         })}

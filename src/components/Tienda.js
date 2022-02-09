@@ -17,7 +17,6 @@ const addCart = (item) => {
     type: TYPES.add,payload:item,
   });
 }
-console.log(state);
 localStorage.setItem('cart',JSON.stringify(state));
 //reducer de cesta-------------------------------------------------
 

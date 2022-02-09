@@ -21,7 +21,7 @@ function Header(props) {
 
         <Title popup={popup} setPopup={setPopup}  carrito={carrito} setCarrito={setCarrito}/>
 
-        {carrito && <Cart carrito={carrito} setCarrito={setCarrito}/>}
+        {carrito && <Cart carrito={carrito} setCarrito={setCarrito} addCart={props.addCart}/>}
 
         <Offer />
       </header>

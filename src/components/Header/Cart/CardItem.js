@@ -1,5 +1,7 @@
 function CartItem (props) {
   const item = props.item;
+  const addCart = props.addCart;
+
   return(
     <>
       <img src={item.img}></img>
@@ -7,7 +9,7 @@ function CartItem (props) {
       <p>x{item.quantity}</p>
       <span>{item.price}€</span>
       <div className='mod-cant'>
-        <button>+</button>
+        <button onClick={()=>addCart(item)}>+</button>
         <button>-</button>
       </div>    
     </>
