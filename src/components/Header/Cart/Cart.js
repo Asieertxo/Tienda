@@ -1,12 +1,4 @@
-import { useReducer } from "react";
-import { reducerCart, initialState } from "../../../reducers/cartReducer";
-
-import CartItem from "./CardItem"
-
 function Cart(props) {
-
-  const [state, dispatch] = useReducer(reducerCart, initialState);
-  const {list, cart} = state;
 
 
   return (
@@ -16,9 +8,13 @@ function Cart(props) {
         <button className='cart-title_close' onClick={() => props.setCarrito(!props.carrito)}>&#215;</button>
       </div>
       <div className="cart-products">
-        {state.cart.map((item, index) => (
-          <CartItem key={index} item={item} />
-        ))}
+        {props.state.map(function (item){
+          return (
+            <div key={props.state}>
+              <span>{props.state.name}</span>
+            </div>
+          );
+        })}
       </div>
       <div className="cart-price">
         <p>Total:</p>

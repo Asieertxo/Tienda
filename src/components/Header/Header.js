@@ -15,13 +15,18 @@ function Header() {
   const [carrito, setCarrito] = useState(false);
 
   const [state, dispatch] = useReducer(reducerCart, initialState);
-  const {list, cart} = state;
+  const {cart} = state;
 
-  const addCart = (ObjectID) => {
+  const addCart = (item) => {
     dispatch ({
-      type: TYPES.add,payload:ObjectID
+      type: TYPES.add,payload:item,
     });
   }
+  console.log(state);
+  localStorage.setItem('cart',JSON.stringify(state));
+  const local = localStorage.getItem('cart');
+  console.log('objetoObtenido: ',JSON.parse(local));
+
 
   return (
     <>

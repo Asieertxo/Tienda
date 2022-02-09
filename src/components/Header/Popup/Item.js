@@ -13,7 +13,7 @@ function Item(props){
             <span className="caract">{item.text}</span>
           </div>
           <span className="popup-products__card_price">{item.price}€</span>
-          <img className="popup-products__card_cart" src={cart} onClick={()=>addCart(item.ObjectID)}></img>
+          <img className="popup-products__card_cart" src={cart} onClick={()=>addCart(item)}></img>
         </>
     )
 }
