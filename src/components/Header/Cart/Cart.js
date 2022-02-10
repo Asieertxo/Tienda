@@ -1,9 +1,31 @@
+import { useState ,useEffect } from "react";
 import CardItem from "./CardItem";
 
 function Cart(props) {
-
   const local = JSON.parse(localStorage.getItem('cart'));
 
+  const [count, setCount] = useState(0);
+
+  useEffect(() =>{
+    const total = local.map(function(item){
+      const price = item.price
+      const cant = item.quantity
+      return price * cant
+    })
+    
+    let suma =0
+    total.map(function (item){
+      suma = suma + item
+      return suma
+      
+    })
+    console.log('suma',suma)
+    setCount(suma)
+  },[local]);
+
+
+
+  
   return (
     <div className="cart">
       <div className="cart-title">
@@ -22,8 +44,7 @@ function Cart(props) {
       </div>
 
       <div className="cart-price">
-        <p>Total:</p>
-        <span></span>
+        <span>Total: {count} €</span>
       </div>
     </div>
   );
