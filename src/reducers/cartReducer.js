@@ -1,9 +1,7 @@
-import { isContentEditable } from "@testing-library/user-event/dist/utils";
 
 export const TYPES = {
   add:    "add",
-  remove: "remove",
-  clear:  "clear",
+  del:    "del",
 };
 
 export function reducerCart(state,action){
@@ -24,13 +22,16 @@ export function reducerCart(state,action){
       }
     }
 
-
-    case TYPES.remove:{
+    case TYPES.del:{
+      let incart = state.find((item) => item.ObjectID == action.payload.ObjectID)
+      return incart.quantity > 1 
+        ? [...state.map(item => item.ObjectID === action.payload.ObjectID 
+          ? {...item, quantity:item.quantity -1}
+          :item)] 
+        : state.filter((item) => item.ObjectID !== action.payload.ObjectID)
 
     }
-    case TYPES.clear:{
 
-    }
     default:
       return state;
   }

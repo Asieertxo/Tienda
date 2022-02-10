@@ -17,12 +17,21 @@ const addCart = (item) => {
     type: TYPES.add,payload:item,
   });
 }
+const delCart = (item) => {
+  dispatch ({
+    type: TYPES.del,payload:item,
+  });
+}
+console.log(state)
+
 localStorage.setItem('cart',JSON.stringify(state));
+
+
 //reducer de cesta-------------------------------------------------
 
   return (
     <>
-    <Header addCart={addCart}/>
+    <Header addCart={addCart} delCart={delCart}/>
 
     <FirstSection />
 

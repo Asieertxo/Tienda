@@ -1,6 +1,7 @@
 function CartItem (props) {
   const item = props.item;
   const addCart = props.addCart;
+  const delCart = props.delCart;
 
   return(
     <>
@@ -10,7 +11,7 @@ function CartItem (props) {
       <span>{item.price}€</span>
       <div className='mod-cant'>
         <button onClick={()=>addCart(item)}>+</button>
-        <button>-</button>
+        <button onClick={()=>delCart(item)}>-</button>
       </div>    
     </>
   );

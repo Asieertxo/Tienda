@@ -15,7 +15,7 @@ function Cart(props) {
         {local.map(function (item){
           return (
             <div key={item.ObjectID} className='cart-products__card'>
-              <CardItem item={item} addCart={props.addCart}/>
+              <CardItem item={item} addCart={props.addCart} delCart={props.delCart}/>
             </div>
           );
         })}

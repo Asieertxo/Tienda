@@ -20,7 +20,7 @@ function Title(props) {
       <h1>start renting gaming</h1>
       <h3>best equipment to use in our hotel</h3>
       
-      <BtnSearch popup={props.popup} setPopup={props.setPopup}/>
+      <BtnSearch setPopup={props.setPopup}/>
 
     </div>
   );
