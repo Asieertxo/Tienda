@@ -15,6 +15,24 @@
     flex-direction: column;
     align-items: center;
 
+    @media only screen and (max-width: 1550px) {
+        &{
+            margin-left: 90rem;
+        }
+    }
+    @media only screen and (max-width: 1350px) {
+        &{
+            margin-left: 70rem;
+        }
+    }
+    @media only screen and (max-width: 1150px) {
+        &{
+            margin-left: auto;
+            width: 80%;
+            height: 80%;
+        }
+    }
+
     &-title{
         width: 90%;
         display: flex;
