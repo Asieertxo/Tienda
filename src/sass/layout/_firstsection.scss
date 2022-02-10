@@ -1,6 +1,7 @@
 .firstsection{
     width: 100%;
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -15,9 +16,16 @@
         justify-content: space-between;
         //background-color: yellowgreen;
         width: 70%;
-        height: 50rem;
+        height: auto;
+        min-height: 50rem;
         //padding: 0 30rem;
         gap: 5rem;
+
+        @media only screen and (max-width: 1000px) {
+            &{
+                flex-direction: column;
+            }
+        }
 
         &-one{
             display: flex;
@@ -26,6 +34,12 @@
             //background-color: violet;
             width: 22rem;
             height: 40rem;
+
+            /*@media only screen and (max-width: 1000px) {
+                &{
+                    flex-direction: row;
+                }
+            }*/
 
             &__image{
                 width: 100%;

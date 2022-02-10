@@ -110,6 +110,13 @@
         margin-top: 30rem;
         margin-right: 95rem;
 
+        @media only screen and (max-width: 1400px) {
+            &{
+                background-color: red;
+                z-index: -1;
+            }
+        }
+
         &__images{
             display: flex;
             align-items: center;
@@ -159,6 +166,13 @@
         color: white;
         font-size: 1rem;
         font-weight: 900;
+
+        @media only screen and (max-width: 840px) {
+            &{
+                background-color: red;
+                z-index: -1;
+            }
+        }
 
         &__title{
             padding-top: 0.5rem;
