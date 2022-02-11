@@ -1,0 +1,26 @@
+.slider{
+    position: absolute;
+    margin-top: 30rem;
+    margin-right: 95rem;
+
+    background-color: red;
+
+    &-content{
+        background-color: aqua;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+
+        &__item{
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img{
+                    width: 10rem;
+                    height: 10rem;  
+            }
+            
+        }
+    }
+}

@@ -5,6 +5,7 @@ import Title from "./Title";
 import Offer from "./Offer";
 import Popup from "./Popup/Popup";
 import Cart from "./Cart/Cart";
+import Slider from "./Slider/Slider";
 
 function Header(props) {
 
@@ -17,7 +18,8 @@ function Header(props) {
       <header className="header">
         <p className="header-T"><b>G</b>aming <b>S</b>hop</p>
         
-        <Choice />
+        {/*<Choice />*/}
+        <Slider />
 
         <Title setPopup={setPopup} setCarrito={setCarrito}/>
 
