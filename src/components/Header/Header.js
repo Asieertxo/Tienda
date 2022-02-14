@@ -19,7 +19,7 @@ function Header(props) {
         <p className="header-T"><b>G</b>aming <b>S</b>hop</p>
         
         {/*<Choice />*/}
-        <Slider />
+        {/*<Slider />*/}
 
         <Title setPopup={setPopup} setCarrito={setCarrito}/>
 
