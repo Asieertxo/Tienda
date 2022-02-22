@@ -134,10 +134,22 @@ const initialStories = [
     },
   ];
 
-const getAsyncStories = () => new Promise((resolve) => {
+
+
+const getAsyncStories = () => new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve({data: {stories: initialStories} });
-  }, 7000);
+  }, 2000);
 });
 
-export default getAsyncStories;
+const withError = (promise, probError = 0.1) => {
+  const isError = Math.random() <= probError;
+  promise.then(result => {
+    if (isError){
+      throw new Error("Error!");
+    }
+    return result;
+  })
+}
+
+export default withError;
