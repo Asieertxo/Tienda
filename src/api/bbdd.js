@@ -142,7 +142,7 @@ const getAsyncStories = () => new Promise((resolve) => {
   }, 2000);
 });
 
-const withError = (promise, probError = 0.1) => {
+const withError = (promise, probError = 0.5) => {
   const isError = Math.random() <= probError;
   return  promise.then(result => {
     if (isError){

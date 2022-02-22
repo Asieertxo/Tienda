@@ -5,18 +5,29 @@ import { getAsyncStories, withError} from "./../../api/bbdd"
 function List(props) {
 
   useEffect(() => {
-    setIsLoading(true);
-    withError(getAsyncStories()).then(result => {
-      setList(result.data.stories);
-      setIsLoading(false);
-    }).catch(_err => setIsError(true));
+    loadStories();
   }, []);
   const [list, setList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
+  function loadStories(){
+    setIsError(false);
+    setIsLoading(true);
+    withError(getAsyncStories()).then(result => {
+      setList(result.data.stories);
+      setIsLoading(false);
+    }).catch(_err => setIsError(true));
+  }
+
+
+
+
   if(isError){
-    return <p>Error!</p>
+    return <>
+      <p>Error!</p>
+      <button onClick={loadStories}>Retry</button>
+    </>
   }
 
   return isLoading ? <p>Loading...</p> : 
