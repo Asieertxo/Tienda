@@ -137,7 +137,7 @@ const initialStories = [
 const getAsyncStories = () => new Promise((resolve) => {
   setTimeout(() => {
     resolve({data: {stories: initialStories} });
-  }, 2000);
+  }, 7000);
 });
 
 export default getAsyncStories;
