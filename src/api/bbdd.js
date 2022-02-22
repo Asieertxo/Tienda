@@ -1,4 +1,4 @@
-const list = [
+const initialStories = [
     {
       img: require('./../img/pc1.jpg'),
       name: 'Millenium Machine 1 Mini Soraka',
@@ -134,4 +134,6 @@ const list = [
     },
   ];
 
-export default list;
+const getAsyncStories = () => Promise.resolve({ data: { stories: initialStories } });
+
+export default getAsyncStories;
