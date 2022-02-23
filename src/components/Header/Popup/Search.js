@@ -5,9 +5,9 @@ function Search(props) {
   }
 
   return (
-    <div className="search">
-      <input id="search" type="text" onChange={handleChange} placeholder="Que quieres..." value={props.searchTerm}></input>
-    </div>
+      <div className="search">
+        <input id="search" type="text" onChange={handleChange} placeholder="Que quieres..." value={props.searchTerm}></input>
+      </div>
   );
 }
   
